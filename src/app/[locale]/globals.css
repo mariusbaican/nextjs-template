@@ -1,99 +1,11 @@
 @import "tailwindcss";
 
 :root {
-  --default-dark: rgba(18, 18, 18, 1);
-  --dark-transparent: rgba(18, 18, 18, 0.8);
-  --accents-dark: rgba(9, 9, 9, 1);
-  --accents-dark-transparent: rgba(9, 9, 9, 0.8);
+  --bg: oklch(18.22% 0.00002 271.152);
+  --primary: oklch(87.495% 0.17902 92.686);
 
-  --footer: rgb(35, 35, 35);
-
-  --default-yellow: rgb(255, 209, 0);
-
-  --yellow-gradient-light: rgb(70, 59, 8);
-  --yellow-gradient-dark: rgb(40, 34, 8);
-  --lit-up-yellow-gradient-light: rgb(90, 79, 28);
-  --lit-up-yellow-gradient-dark: rgb(60, 54, 28);
-
-  --box-gradient-light: rgb(52, 52, 52);
-  --box-gradient-dark: rgb(37, 37, 37);
-  --box-inner-gradient-light: rgba(99, 99, 99, 0.051);
-  --box-inner-gradient-dark: rgba(2, 2, 2, 0.051);
-
-  --carousel-gradient-light: rgba(255, 255, 255, 0.0706);
-  --carousel-gradient-dark: rgba(88, 88, 88, 0.0706);
-
-  --default-text: rgba(177, 177, 177, 1);
-  --alternate-text: rgba(255, 255, 255, 1);
-  --darker-text: rgba(108, 108, 108, 1);
-
-  /* Projects */
-
-  --the-vault: #ffb700;
-  --the-vault-gradient: #201600;
-  --the-vault-text: var(--the-vault);
-
-  --brickdocs: #ff6750;
-  --brickdocs-gradient: #201614;
-  --brickdocs-text: var(--brickdocs);
-
-  --sparks: #9e50ff;
-  --sparks-gradient: #0f031e;
-  --sparks-text: #d3d3ff;
-
-  --checkpoint: #30caae;
-  --checkpoint-gradient: #031e19;
-  --checkpoint-text: var(--checkpoint);
-
-  --simplicityftc: #aae348;
-  --simplicityftc-gradient: #1c2014;
-  --simplicityftc-text: var(--simplicityftc);
-
-  /* Sponsorship tiers */
-
-  --bronze-tier-gradient: rgb(149, 126, 50);
-  --bronze-tier-text: rgb(167, 139, 91);
-
-  --silver-tier-gradient: rgb(138, 162, 172);
-  --silver-tier-text: rgb(180, 181, 184);
-
-  --gold-tier-gradient: rgb(255, 214, 80);
-  --gold-tier-text: rgb(255, 237, 132);
-
-  --diamond-tier-gradient: rgb(93, 231, 255);
-  --diamond-tier-text: rgb(153, 223, 255);
-
-  --ultimate-tier-gradient: rgb(164, 80, 255);
-  --ultimate-tier-text: rgb(243, 189, 255);
-
-  /* FTC Seasons */
-
-  --into-the-deep-text: rgb(77, 196, 255);
-  --into-the-deep-gradient: rgb(140, 186, 255);
-
-  --centerstage-text: rgb(255, 62, 129);
-  --centerstage-gradient: rgb(255, 140, 200);
-
-  --powerplay-text: rgb(142, 255, 62);
-  --powerplay-gradient: rgb(184, 255, 140);
-
-  --freight-frenzy-text: rgb(255, 231, 108);
-  --freight-frenzy-gradient: rgb(255, 224, 140);
-
-  --ultimate-goal-text: rgb(108, 140, 255);
-  --ultimate-goal-gradient: rgb(108, 140, 255);
-
-  --skystone-text: rgb(185, 185, 185);
-  --skystone-gradient: rgb(157, 157, 157);
-
-  --rover-ruckus-text: rgb(255, 134, 69);
-  --rover-ruckus-gradient: rgb(255, 134, 69);
-
-  --relic-recovery-text: rgb(115, 146, 82);
-  --relic-recovery-gradient: rgb(255, 224, 140);
-
-  --velocity-vortex-text: rgb(255, 92, 83);
-  --velocity-vortex-gradient: rgb(255, 144, 140);
+  --text: oklch(76.039% 0.00009 271.152);
+  --text-alternate: oklch(100% 0.00011 271.152);
 
   --sm-space-x: 1.5rem;
   --md-space-x: 2.5rem;
@@ -108,8 +20,6 @@
   --2xl-space-y: 5rem;
 
   --navbar-height: 4rem;
-  --separator-thickness: 0.1rem;
-  --arrow-button-size: 2.5rem;
 
   .outer-content {
     display: flex;
@@ -150,8 +60,6 @@
 /* sm */
 :root {
   --page-width: min(calc(100vw - 3rem), 37rem);
-  --banner-height: 30rem;
-  --arrow-button-size: 2.5rem;
 
   --sm-space-x: 1rem;
   --md-space-x: 1.25rem;
@@ -166,52 +74,24 @@
   --2xl-space-y: 4.5rem;
 
   h1 {
-    font-size: 3rem;
-    line-height: 3rem;
-    color: var(--default-yellow);
-    font-weight: 800;
   }
 
   h2 {
-    font-size: 2rem;
-    line-height: 2rem;
-    color: var(--default-yellow);
-    font-weight: 800;
   }
 
   h3 {
-    font-size: 1.35rem;
-    line-height: 1.35rem;
-    color: var(--default-yellow);
-    font-weight: 600;
   }
 
   h4 {
-    font-size: 1.3rem;
-    line-height: 1.4rem;
-    color: var(--default-yellow);
-    font-weight: 800;
   }
 
   h5 {
-    font-size: 1.1rem;
-    line-height: 1.2rem;
-    color: var(--alternate-text);
-    font-weight: 700;
   }
 
   h6 {
-    font-size: 1.1rem;
-    line-height: 1.2rem;
-    color: var(--alternate-text);
-    font-weight: 600;
   }
 
   p {
-    font-size: 1.1rem;
-    line-height: 1.4rem;
-    color: var(--default-text);
-    font-weight: 500;
   }
 }
 
@@ -219,8 +99,6 @@
 @media (min-width: 768px) {
   :root {
     --page-width: min(calc(100vw - 4rem), 44rem);
-    --banner-height: 35rem;
-    --arrow-button-size: 2.5rem;
 
     --sm-space-x: 1rem;
     --md-space-x: 1.5rem;
@@ -235,52 +113,24 @@
     --2xl-space-y: 4.5rem;
 
     h1 {
-      font-size: 3.2rem;
-      line-height: 3.2rem;
-      color: var(--default-yellow);
-      font-weight: 800;
     }
 
     h2 {
-      font-size: 2.2rem;
-      line-height: 2.2rem;
-      color: var(--default-yellow);
-      font-weight: 800;
     }
 
     h3 {
-      font-size: 1.35rem;
-      line-height: 1.6rem;
-      color: var(--default-yellow);
-      font-weight: 600;
     }
 
     h4 {
-      font-size: 1.3rem;
-      line-height: 1.3rem;
-      color: var(--default-yellow);
-      font-weight: 800;
     }
 
     h5 {
-      font-size: 1.2rem;
-      line-height: 1.5rem;
-      color: var(--alternate-text);
-      font-weight: 700;
     }
 
     h6 {
-      font-size: 1.1rem;
-      line-height: 1.3rem;
-      color: var(--alternate-text);
-      font-weight: 600;
     }
 
     p {
-      font-size: 1.2rem;
-      line-height: 1.6rem;
-      color: var(--default-text);
-      font-weight: 500;
     }
   }
 }
@@ -289,8 +139,6 @@
 @media (min-width: 1024px) {
   :root {
     --page-width: min(calc(100vw - 6rem), 58rem);
-    --banner-height: 45rem;
-    --arrow-button-size: 2.75rem;
 
     --sm-space-x: 1rem;
     --md-space-x: 1.5rem;
@@ -305,52 +153,24 @@
     --2xl-space-y: 5rem;
 
     h1 {
-      font-size: 3.6rem;
-      line-height: 3.6rem;
-      color: var(--default-yellow);
-      font-weight: 800;
     }
 
     h2 {
-      font-size: 2.6rem;
-      line-height: 2.6rem;
-      color: var(--default-yellow);
-      font-weight: 800;
     }
 
     h3 {
-      font-size: 1.55rem;
-      line-height: 1.8rem;
-      color: var(--default-yellow);
-      font-weight: 600;
     }
 
     h4 {
-      font-size: 1.4rem;
-      line-height: 1.4rem;
-      color: var(--default-yellow);
-      font-weight: 800;
     }
 
     h5 {
-      font-size: 1.3rem;
-      line-height: 1.6rem;
-      color: var(--alternate-text);
-      font-weight: 700;
     }
 
     h6 {
-      font-size: 1.2rem;
-      line-height: 1.4rem;
-      color: var(--alternate-text);
-      font-weight: 600;
     }
 
     p {
-      font-size: 1.3rem;
-      line-height: 1.7rem;
-      color: var(--default-text);
-      font-weight: 500;
     }
   }
 }
@@ -359,7 +179,6 @@
 @media (min-width: 1280px) {
   :root {
     --page-width: min(calc(100vw - 8rem), 72rem);
-    --arrow-button-size: 3rem;
 
     --sm-space-x: 1rem;
     --md-space-x: 1.75rem;
@@ -374,52 +193,24 @@
     --2xl-space-y: 5.5rem;
 
     h1 {
-      font-size: 4rem;
-      line-height: 4rem;
-      color: var(--default-yellow);
-      font-weight: 800;
     }
 
     h2 {
-      font-size: 3rem;
-      line-height: 3rem;
-      color: var(--default-yellow);
-      font-weight: 800;
     }
 
     h3 {
-      font-size: 1.5rem;
-      line-height: 2rem;
-      color: var(--default-yellow);
-      font-weight: 600;
     }
 
     h4 {
-      font-size: 1.5rem;
-      line-height: 1.5rem;
-      color: var(--default-yellow);
-      font-weight: 800;
     }
 
     h5 {
-      font-size: 1.4rem;
-      line-height: 1.8rem;
-      color: var(--alternate-text);
-      font-weight: 700;
     }
 
     h6 {
-      font-size: 1.3rem;
-      line-height: 1.6rem;
-      color: var(--alternate-text);
-      font-weight: 600;
     }
 
     p {
-      font-size: 1.5rem;
-      line-height: 1.9rem;
-      color: var(--default-text);
-      font-weight: 500;
     }
   }
 }
@@ -428,83 +219,38 @@
 @media (min-width: 1536px) {
   :root {
     --page-width: min(calc(100vw - 8rem), 88rem);
-    --arrow-button-size: 3.5rem;
 
     h1 {
-      font-size: 4rem;
-      line-height: 4rem;
-      color: var(--default-yellow);
-      font-weight: 800;
     }
 
     h2 {
-      font-size: 3rem;
-      line-height: 3rem;
-      color: var(--default-yellow);
-      font-weight: 800;
     }
 
     h3 {
-      font-size: 1.75rem;
-      line-height: 2rem;
-      color: var(--default-yellow);
-      font-weight: 600;
     }
 
     h4 {
-      font-size: 1.5rem;
-      line-height: 1.5rem;
-      color: var(--default-yellow);
-      font-weight: 800;
     }
 
     h5 {
-      font-size: 1.4rem;
-      line-height: 1.8rem;
-      color: var(--alternate-text);
-      font-weight: 700;
     }
 
     h6 {
-      font-size: 1.3rem;
-      line-height: 1.6rem;
-      color: var(--alternate-text);
-      font-weight: 600;
     }
 
     p {
-      font-size: 1.5rem;
-      line-height: 1.9rem;
-      color: var(--default-text);
-      font-weight: 500;
     }
   }
 }
 
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.rotate-slow {
-  animation: rotate 1000ms linear infinite;
-}
-
 @theme inline {
-  --color-background: var(--default-dark);
-  --color-foreground: var(--default-text);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: var(--default-dark);
-    --foreground: rgb(237, 237, 237);
+    --foreground: --text;
   }
 }
 
